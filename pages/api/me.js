@@ -1,6 +1,6 @@
-import dbConnect from '@/lib/dbConnect';
-import User from '@/models/User';
-import { verifyToken } from '@/lib/auth';
+import dbConnect from '../../lib/dbConnect';
+import User from '../../models/User';
+import { verifyToken } from '../../lib/auth';
 
 export default async function handler(req, res) {
   await dbConnect();
